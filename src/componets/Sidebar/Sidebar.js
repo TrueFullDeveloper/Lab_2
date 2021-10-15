@@ -11,7 +11,7 @@ const Sidebar = () => {
     <SidebarContainer>
       <SidebarTitle>Лаборатоная #2</SidebarTitle>
 
-      <SidebarItem to={pathConfig.authPlayers}>
+      <SidebarItem to={pathConfig.main}>
         <img src={TicTacToeIcon} alt={""} />
         Крестики нолики - ПП
       </SidebarItem>
@@ -26,7 +26,7 @@ const Sidebar = () => {
         Крестики нолики - ООП
       </SidebarItem>
 
-      <SidebarItem to={pathConfig.authPlayers}>
+      <SidebarItem to={pathConfig.calculatorOOP}>
         <img src={CalculatorIcon} alt={""} />
         Калькулятор - ООП
       </SidebarItem>

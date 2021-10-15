@@ -1,5 +1,5 @@
 import React from "react";
-import { useHistory } from "react-router-dom";
+import { useHistory, useRouteMatch } from "react-router-dom";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { pathConfig } from "config/router/pathConfig";
@@ -20,6 +20,7 @@ import Sidebar from "componets/Sidebar";
 
 const AuthPlayers = () => {
   const history = useHistory();
+  const { path } = useRouteMatch();
 
   const { handleSubmit, handleChange, values, errors, touched } = useFormik({
     initialValues: {
@@ -41,7 +42,11 @@ const AuthPlayers = () => {
         })
       );
 
-      history.push(pathConfig.ticTacToe);
+      if (path.indexOf(pathConfig.authPlayers) === -1) {
+        history.push(pathConfig.ticTacToe);
+      } else {
+        history.push(pathConfig.ticTacToeOOP);
+      }
     },
   });
 

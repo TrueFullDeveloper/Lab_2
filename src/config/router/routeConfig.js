@@ -24,8 +24,22 @@ export const routeConfig = [
     roles: [roleConfig.user],
   },
   {
+    path: pathConfig.ticTacToeOOP,
+    component: lazy(() => import("pages/TicTacTieOOP")),
+    protected: true,
+    exact: true,
+    roles: [roleConfig.user],
+  },
+  {
     path: pathConfig.calculator,
     component: lazy(() => import("pages/Calculator")),
+    protected: true,
+    exact: true,
+    roles: [roleConfig.user],
+  },
+  {
+    path: pathConfig.calculatorOOP,
+    component: lazy(() => import("pages/CalculatorOOP")),
     protected: true,
     exact: true,
     roles: [roleConfig.user],
