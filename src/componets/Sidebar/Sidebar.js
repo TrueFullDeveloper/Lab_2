@@ -5,11 +5,12 @@ import { SidebarItem, SidebarTitle, SidebarContainer } from "./Styled";
 
 import TicTacToeIcon from "static/images/tic-tac-toe.svg";
 import CalculatorIcon from "static/images/calculator.svg";
+import VariantIcon from "static/images/bookmark-variant.svg";
 
 const Sidebar = () => {
   return (
     <SidebarContainer>
-      <SidebarTitle>Лаборатоная #2</SidebarTitle>
+      <SidebarTitle>Лабораторная #2</SidebarTitle>
 
       <SidebarItem to={pathConfig.main}>
         <img src={TicTacToeIcon} alt={""} />
@@ -29,6 +30,17 @@ const Sidebar = () => {
       <SidebarItem to={pathConfig.calculatorOOP}>
         <img src={CalculatorIcon} alt={""} />
         Калькулятор - ООП
+      </SidebarItem>
+
+      <SidebarTitle>Лабораторная #5</SidebarTitle>
+      <SidebarItem to={pathConfig.laboratoryNumberFive}>
+        <img src={VariantIcon} alt={""} />
+        Вариант №1
+      </SidebarItem>
+
+      <SidebarItem to={pathConfig.laboratoryNumberFiveV2}>
+        <img src={VariantIcon} alt={""} />
+        Вариант №2
       </SidebarItem>
     </SidebarContainer>
   );

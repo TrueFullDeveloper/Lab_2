@@ -10,6 +10,9 @@ export const SidebarContainer = styled.div`
   height: 100vh;
 
   background: #2d2d2d;
+
+  box-sizing: border-box;
+  border-right: 2px solid #3f3f3f;
 `;
 
 export const SidebarTitle = styled.span`

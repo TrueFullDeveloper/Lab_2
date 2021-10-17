@@ -44,4 +44,11 @@ export const routeConfig = [
     exact: true,
     roles: [roleConfig.user],
   },
+  {
+    path: pathConfig.laboratoryNumberFive,
+    component: lazy(() => import("pages/LaboratoryNumberFive")),
+    protected: true,
+    exact: false,
+    roles: [roleConfig.user],
+  },
 ];
