@@ -74,7 +74,7 @@ const TicTacToe = () => {
 
       setGameState(gameStateConfig.FINISH);
     } else {
-      if (firstPlayerTurns.length + secondPlayerTurns.length === 3 * 3) {
+      if (firstPlayerTurns.length + secondPlayerTurns.length === FIELD_SIZE * FIELD_SIZE) {
         setGameState(gameStateConfig.DRAW);
       } else {
         setTurnFlag(!turnFlag);

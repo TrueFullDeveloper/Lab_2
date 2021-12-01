@@ -6,6 +6,7 @@ import { SidebarItem, SidebarTitle, SidebarContainer } from "./Styled";
 import TicTacToeIcon from "static/images/tic-tac-toe.svg";
 import CalculatorIcon from "static/images/calculator.svg";
 import VariantIcon from "static/images/bookmark-variant.svg";
+import EditorIcon from "static/images/text-editor.svg";
 
 const Sidebar = () => {
   return (
@@ -42,6 +43,13 @@ const Sidebar = () => {
         <img src={VariantIcon} alt={""} />
         Вариант №2
       </SidebarItem>
+
+      <SidebarTitle>Лабораторная #6</SidebarTitle>
+      <SidebarItem to={pathConfig.laboratoryNumberFive}>
+        <img src={EditorIcon} alt={""} />
+        Editor
+      </SidebarItem>
+
     </SidebarContainer>
   );
 };

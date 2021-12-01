@@ -22,7 +22,7 @@ const LaboratoryNumberFive = () => {
   const { path } = useRouteMatch();
 
   const onKeyPressHandler = (event) => {
-    if (path.indexOf("v2") === -1) return;
+    if (path.indexOf("v2") !== -1) return;
 
     if (event.keyCode === 37) {
       if (currentKey > 1) {
